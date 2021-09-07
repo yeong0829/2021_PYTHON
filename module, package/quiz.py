@@ -63,11 +63,11 @@ print("7.", day2 - today)
 # 나간 친구 번호 묻기 - 리스트에서 뺴기
 #랜덤으로 섞고 출력
 print('-'*20)
-last_number = input("마지막 번호: ")
-list_class = list(range(1, last_number+1))
+last_number = input("8. 마지막 번호는? ")
+list_class = list(range(1, int(last_number) + 1))
 while True:
-    exclude_number = input("뺼 번호(enter:끝): ")
-    if exclude_number =='':
+    exclude_number = input("뺄 번호는?(enter치면 끝내자) ")
+    if exclude_number == '':
         break
     list_class.remove(int(exclude_number))
-print("8.", list_class)
+print(list_class)
